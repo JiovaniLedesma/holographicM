@@ -1,2 +1,2 @@
 # holographicM
-Python library for an Holographic Microscope
+Python library for an Holographic Microscopy
