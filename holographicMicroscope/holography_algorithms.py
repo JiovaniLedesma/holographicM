@@ -39,14 +39,19 @@ def reconstruction(Hog, ker, lamda):
 	z = 0.0
 	# Python maneja los números imaginarios con " j "
 	OBJr = (((Hog)*np.exp((1j*2*np.pi*z*ker)/lamda)))
-	objectrecr = ((np.fft.ifft2(np.fft.ifftsshift(OBJr))))
+	objectrecr = ((np.fft.ifft2(np.fft.ifftshift(OBJr))))
 	intr = np.absolute(objectrecr)
 	phar = np.angle(objectrecr)
 	ref = 10
 
 	return intr, phar, ref
 
-def slider(valor, Hog, ker, lamda):
+def slider(valor_slider, Hog, ker, lamda):
+	z = valor_slider
+	OBJ = (((Hog*np.exp((1j*2*pi*z*ker)/lamda))))
+	objectrec = ((np.fft.ifft2(np.fft.ifftshift(OBJ))))
+	int = np.absolute(objectrec)
+	OBJ = (((Hog*np.exp((1j*2*pi*(z**2)*ker)/lamda))))
 
 
 # data = np.array([[800],[950]])
