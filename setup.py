@@ -10,7 +10,7 @@ setup(name='holographicM',
       license = "MIT",
       keywords=["Holography","Microscope","Holographic Microscope"],
       url='https://github.com/JiovaniLedesma/holographicM',
-      packages=['HolographicMicroscope'],
+      packages=['holographicMicroscope'],
       classifiers=[
       "Development Status :: 2 - Pre-Alpha",
       "Intended Audience :: Education",
@@ -18,7 +18,7 @@ setup(name='holographicM',
       "License :: OSI Approved :: MIT License",
       "Operating System :: OS Independent",
       "Programming Language :: Python",
-      "Programming Language :: Python :: 3.6",
+      "Programming Language :: Python :: 3.7",
       "Programming Language :: Python :: Implementation :: CPython",
       ]
       )
